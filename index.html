@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portofolio Nawajunda Niedo Sahaja — Graphic Designer, Social Media Manager, dan Administrative Assistant.">
+<title>Nawajunda Niedo Sahaja — Portfolio</title>
+<style>
+:root{
+  --blue:#07549b; --blue2:#0d68bd; --soft:#eaf2f9; --ink:#17324d;
+  --muted:#60758a; --white:#fff; --line:#dce7f0; --shadow:0 18px 55px rgba(8,56,96,.10);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#f8fbfd;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;z-index:20;top:18px;left:50%;transform:translateX(-50%);width:min(1100px,calc(100% - 32px));display:flex;align-items:center;justify-content:space-between;padding:12px 16px 12px 20px;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border:1px solid rgba(220,231,240,.9);border-radius:18px;box-shadow:0 10px 35px rgba(7,84,155,.08)}
+.logo{font-weight:900;letter-spacing:-.04em;color:var(--blue);font-size:18px}
+.navlinks{display:flex;gap:20px;font-size:14px;font-weight:700;color:#42617a}
+.navlinks a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 17px;font-weight:800;cursor:pointer}
+.btn.primary{background:var(--blue);color:#fff}.btn.secondary{background:#fff;color:var(--blue);border:1px solid var(--line)}
+.hero{min-height:100vh;padding:145px 24px 80px;display:grid;place-items:center;overflow:hidden;position:relative}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:45%;background:var(--soft);z-index:-1;opacity:.8}
+.hero:before{width:520px;height:230px;left:-210px;bottom:30px;transform:rotate(16deg)}
+.hero:after{width:330px;height:520px;right:-180px;top:110px;transform:rotate(18deg)}
+.hero-grid{width:min(1100px,100%);display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.eyebrow{display:inline-flex;padding:7px 11px;border-radius:999px;background:#e7f1fa;color:var(--blue);font-size:13px;font-weight:900;margin-bottom:18px}
+h1{font-size:clamp(48px,7vw,88px);line-height:.95;letter-spacing:-.065em;margin:0 0 22px;color:var(--blue)}
+.hero p{font-size:18px;max-width:650px;color:#536b7f;margin:0 0 28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:16px;box-shadow:var(--shadow);transform:rotate(2deg)}
+.hero-card img{display:block;width:100%;border-radius:18px}
+section{padding:95px 24px}
+.container{width:min(1100px,100%);margin:auto}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:34px}
+.kicker{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:12px}
+h2{font-size:clamp(34px,5vw,56px);line-height:1.02;letter-spacing:-.05em;margin:7px 0 0;color:#123d64}
+.section-head p{max-width:500px;color:var(--muted);margin:0}
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:start}
+.profile-img{width:100%;max-width:420px;border-radius:25px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.info{background:#f7fafc;border:1px solid var(--line);padding:17px;border-radius:16px}
+.info b{display:block;color:var(--blue);font-size:13px;margin-bottom:5px}
+.info span{font-weight:750}
+.projects{background:#f4f8fb}
+.project{display:grid;grid-template-columns:.92fr 1.08fr;gap:35px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:24px;margin-bottom:24px;box-shadow:0 10px 35px rgba(8,56,96,.06);align-items:center}
+.project:nth-child(even){grid-template-columns:1.08fr .92fr}
+.project:nth-child(even) .project-copy{order:2}
+.project img{width:100%;border-radius:18px;display:block}
+.tag{display:inline-block;background:var(--blue);color:#fff;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:900;margin-bottom:13px}
+.project h3{font-size:28px;line-height:1.15;letter-spacing:-.03em;margin:0 0 9px}
+.meta{font-weight:800;color:var(--blue);font-size:14px;margin-bottom:14px}
+.project ul{margin:0;padding-left:20px;color:#526b80}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:20px}
+.gallery img{width:100%;border-radius:20px;border:1px solid var(--line);box-shadow:0 8px 28px rgba(8,56,96,.07)}
+.skills{background:#fff}
+.skill-wrap{display:flex;flex-wrap:wrap;gap:10px}
+.skill{padding:11px 15px;border:1px solid var(--line);border-radius:999px;background:#f8fbfd;font-weight:800;color:#31516b}
+.contact{background:var(--blue);color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact h2{color:#fff}.contact p{color:#dcebf8;max-width:650px;margin:12px auto 26px}
+.contact .btn.secondary{border-color:rgba(255,255,255,.3)}
+.contact-grid{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+footer{padding:28px 24px;background:#064983;color:#cfe3f4;text-align:center;font-size:13px}
+@media(max-width:800px){
+ .navlinks{display:none}.hero-grid,.about-grid,.project,.project:nth-child(even){grid-template-columns:1fr}.project:nth-child(even) .project-copy{order:0}
+ .hero{padding-top:115px}.hero-card{transform:none}.info-grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}
+ section{padding:72px 20px}.section-head{display:block}.section-head p{margin-top:14px}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#home">NNS.</a>
+  <div class="navlinks">
+    <a href="#about">Tentang</a><a href="#projects">Proyek</a><a href="#skills">Keahlian</a><a href="#contact">Kontak</a>
+  </div>
+  <a class="btn primary" href="mailto:mulanarif0@gmail.com">Hubungi</a>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">PORTFOLIO • 2026</span>
+      <h1>Nawajunda<br>Niedo Sahaja</h1>
+      <p>Graphic Designer, Social Media Manager, dan Administrative Assistant dengan pengalaman di desain visual, media sosial, customer service, logistik, serta administrasi.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Lihat Proyek</a>
+        <a class="btn secondary" href="#contact">Kontak Saya</a>
+      </div>
+    </div>
+    <div class="hero-card"><img src="assets/profile-page.png" alt="Profil Nawajunda Niedo Sahaja"></div>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">01 — Profile</div><h2>Tentang Saya</h2></div>
+      <p>Mahasiswa akhir Sastra Arab UNS yang teliti, komunikatif, dan siap berkontribusi di lingkungan kerja yang dinamis.</p>
+    </div>
+    <div class="about-grid">
+      <img class="profile-img" src="assets/profile-page.png" alt="Profil dan pengalaman">
+      <div>
+        <p>Halo, namaku <strong>Nawajunda</strong> — mahasiswa akhir Sastra Arab UNS dengan pengalaman di desain grafis, media sosial, dan administrasi. Saya terbiasa mengerjakan pekerjaan visual sekaligus tugas operasional yang membutuhkan ketelitian dan komunikasi.</p>
+        <div class="info-grid">
+          <div class="info"><b>EDUCATION</b><span>2022–2026<br>Universitas Sebelas Maret Surakarta<br>Sastra Arab</span></div>
+          <div class="info"><b>EXPERIENCE</b><span>2023–2025<br>Quincy Aromatique<br>Graphic Designer, Admin Reseller, Customer Service</span></div>
+          <div class="info"><b>INTERNSHIP</b><span>Des 2024–Feb 2025<br>Kemenag Klaten — Seksi Pontren<br>Staf Administrasi</span></div>
+          <div class="info"><b>CONTACT</b><span>+6289-532-721-9977<br>mulanarif0@gmail.com</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">02 — Selected Work</div><h2>Proyek Pilihan</h2></div>
+    <p>Beberapa pengalaman dan karya yang ditampilkan kembali dari portofolio PDF.</p>
+  </div>
+
+  <article class="project">
+    <div><img src="assets/project-01.png" alt="SAPA SAKAMARU 2023"></div>
+    <div class="project-copy">
+      <span class="tag">Social Media Manager & Graphic Designer</span>
+      <h3>SAPA/SAKAMARU 2023</h3>
+      <div class="meta">Salam Kenal Mahasiswa Baru • Sastra Arab UNS</div>
+      <p>Kegiatan tahunan Sastra Arab UNS untuk memperkenalkan lingkungan kampus kepada mahasiswa baru. Berperan dalam pengelolaan media sosial dan desain grafis kegiatan.</p>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="project-copy">
+      <span class="tag">Social Media Manager & Graphic Designer</span>
+      <h3>Quincy Aromatique</h3>
+      <div class="meta">Desember 2023 – Agustus 2025 • Packing, Logistik & Social Media</div>
+      <ul>
+        <li>Melakukan packing pesanan sesuai standar pengiriman Shopee.</li>
+        <li>Menginput dan mencocokkan nomor resi, lalu menyerahkan pesanan ke kurir.</li>
+        <li>Mengelola komunikasi dengan reseller melalui WhatsApp.</li>
+        <li>Mengedit konten promosi untuk Instagram dan Shopee.</li>
+      </ul>
+    </div>
+    <div><img src="assets/project-02.png" alt="Quincy Aromatique social media"></div>
+  </article>
+  <div class="gallery">
+    <img src="assets/project-02-gallery.png" alt="Karya Quincy Aromatique">
+  </div>
+
+  <article class="project">
+    <div><img src="assets/project-03.png" alt="Kemenag Klaten administrasi"></div>
+    <div class="project-copy">
+      <span class="tag">Administrative Assistant</span>
+      <h3>Kantor Kementerian Agama Kabupaten Klaten</h3>
+      <div class="meta">Desember 2024 – Februari 2025</div>
+      <ul>
+        <li>Menyusun dan mengurus proposal penerimaan insentif.</li>
+        <li>Menginput data penerima insentif ke dalam aplikasi Excel.</li>
+        <li>Membuat surat-menyurat untuk keperluan instansi.</li>
+      </ul>
+    </div>
+  </article>
+  <div class="gallery">
+    <img src="assets/project-03-gallery.png" alt="Contoh pekerjaan administrasi Excel">
+  </div>
+
+  <article class="project">
+    <div class="project-copy">
+      <span class="tag">Graphic Designer</span>
+      <h3>KKN — Rice Bites Snack</h3>
+      <div class="meta">UMKM Desa • Juli – Agustus 2025</div>
+      <ul>
+        <li>Membantu mengembangkan UMKM melalui program Kuliah Kerja Nyata.</li>
+        <li>Membuat dan mengelola akun Instagram @ricebites_snack.</li>
+        <li>Mendesain poster produk dan feed Instagram.</li>
+        <li>Menyusun strategi konten untuk meningkatkan visibilitas produk.</li>
+      </ul>
+    </div>
+    <div><img src="assets/project-04.png" alt="Rice Bites Snack"></div>
+  </article>
+  <div class="gallery">
+    <img src="assets/project-04-gallery.png" alt="Kumpulan desain Rice Bites Snack">
+  </div>
+</div>
+</section>
+
+<section class="skills" id="skills">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">03 — Capabilities</div><h2>Keahlian</h2></div>
+    <p>Dirangkum dari pengalaman dan peran yang tercantum dalam portofolio.</p>
+  </div>
+  <div class="skill-wrap">
+    <span class="skill">Graphic Design</span><span class="skill">Social Media Management</span>
+    <span class="skill">Content Design</span><span class="skill">Customer Service</span>
+    <span class="skill">Admin Reseller</span><span class="skill">Packing & Logistik</span>
+    <span class="skill">Microsoft Excel</span><span class="skill">Administrasi</span>
+    <span class="skill">Surat-Menyurat</span><span class="skill">Komunikasi</span>
+  </div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+  <div class="kicker" style="color:#bfe0fb">04 — Contact</div>
+  <h2>Let's work together.</h2>
+  <p>Terbuka untuk kesempatan kerja, freelance, maupun kolaborasi yang relevan dengan desain, media sosial, dan administrasi.</p>
+  <div class="contact-grid">
+    <a class="btn secondary" href="mailto:mulanarif0@gmail.com">✉ mulanarif0@gmail.com</a>
+    <a class="btn secondary" href="tel:+62895327219977">☎ +6289-532-721-9977</a>
+  </div>
+</div>
+</section>
+
+<footer>© 2026 Nawajunda Niedo Sahaja — Portfolio</footer>
+</body>
+</html>
